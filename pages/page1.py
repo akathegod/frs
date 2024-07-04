@@ -6,6 +6,20 @@ import face_recognition as frg
 import yaml 
 from utils import recognize, build_dataset
 
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+	header {visibility: hidden;}
+	#GithubIcon {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
 
 make_sidebar()
 
