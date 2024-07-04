@@ -3,6 +3,25 @@ import streamlit as st
 from time import sleep
 from navigation import make_sidebar
 
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+	GithubIcon {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
+
+
+
+
+
+
 # Placeholder for authentication - Replace with your logic!
 def authenticate_user(username, password): 
     user_credentials = {
