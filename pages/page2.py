@@ -25,7 +25,7 @@ make_sidebar()
 
 
 #st.set_page_config(layout="wide")
-st.title("Found Missing Person!")
+st.title("Missing Person Report!")
 st.write("Add Missing Person's Information.")
 
 menu = ["Adding","Deleting", "Adjusting"]
