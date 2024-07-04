@@ -10,7 +10,7 @@ from navigation import make_sidebar
 hide = """
     <style>
         #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
+        	footer {visibility: hidden;}
 	#GithubIcon {visibility: hidden;}
     </style>
 """
