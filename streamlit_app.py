@@ -26,8 +26,8 @@ st.markdown(hide, unsafe_allow_html=True)
 # Placeholder for authentication - Replace with your logic!
 def authenticate_user(username, password): 
     user_credentials = {
-        "admin": {"password": "admin", "role": "admin"},
-        "user": {"password": "user", "role": "viewer"}, 
+        "admin": {"password": "9848196561", "role": "admin"},
+        "user": {"password": "9848196561", "role": "viewer"}, 
     }
     if username in user_credentials and user_credentials[username]['password'] == password:
         return user_credentials[username]
