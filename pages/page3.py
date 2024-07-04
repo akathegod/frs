@@ -4,6 +4,14 @@ import pickle
 import yaml 
 import pandas as pd
 
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        	header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
 
 cfg = yaml.load(open("config.yaml", "r"), Loader=yaml.FullLoader)
 PKL_PATH = cfg['PATH']["PKL_PATH"]
