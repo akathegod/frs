@@ -3,6 +3,22 @@ from navigation import make_sidebar
 import pickle 
 import yaml 
 import pandas as pd 
+
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+	header {visibility: hidden;}
+	#GithubIcon {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
+
 cfg = yaml.load(open("config.yaml", "r"), Loader=yaml.FullLoader)
 PKL_PATH = cfg['PATH']["PKL_PATH"]
 st.set_page_config(layout="wide")
