@@ -3,18 +3,18 @@ import streamlit as st
 from time import sleep
 from navigation import make_sidebar
 
-st.markdown(
-    """
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
     <style>
-    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
-    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-    .viewerBadge_text__1JaDK {
-        display: none;
-    }
+        #MainMenu {visibility: hidden;}
+        #footer {visibility: hidden;}
+	    #GithubIcon {visibility: hidden;}
     </style>
-    """,
-    unsafe_allow_html=True
-)
+"""
+st.markdown(hide, unsafe_allow_html=True)
 
 
 
