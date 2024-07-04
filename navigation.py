@@ -4,6 +4,20 @@ from time import sleep
 from streamlit.runtime.scriptrunner import get_script_run_ctx
 from streamlit.source_util import get_pages
 
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+	header {visibility: hidden;}
+	#GithubIcon {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
 
 def get_current_page_name():
     ctx = get_script_run_ctx()
