@@ -8,11 +8,11 @@ from navigation import make_sidebar
 # #MainMenu to hide the burger menu at the top-right side
 # footer to hide the ⁠ made with streamlit ⁠ mark
 hide = """
-  
+  <style>
         #MainMenu {visibility: hidden;}
         #footer {visibility: hidden;}
 	#GithubIcon {visibility: hidden;}
-  
+  </style>
 """
 st.markdown(hide, unsafe_allow_html=True)
 
