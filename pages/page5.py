@@ -6,6 +6,20 @@ import pickle
 from utils import submitNew, get_info_from_id, deleteOne
 import numpy as np
 
+# code to hide the watermark using CSS
+
+# #MainMenu to hide the burger menu at the top-right side
+# footer to hide the ⁠ made with streamlit ⁠ mark
+hide = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+	header {visibility: hidden;}
+	#GithubIcon {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
+
 
 make_sidebar()
 
